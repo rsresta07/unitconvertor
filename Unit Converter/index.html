@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Unit Converter</title>
+    <link rel="stylesheet" type="text/css" href="indexstyles.css">
+</head>
+<body>
+    <h1>Unit Converter</h1>
+    <div class="converter">
+        <select id="conversionType" onchange="updateConversionOptions()">
+            <option value="-1"><b>Choose a conversion type</b></option>
+            <option value="length">Length</option>
+            <option value="mass">Mass</option>
+            <option value="volume">Volume</option>
+            <option value="temperature">Temperature</option>
+        </select>
+        <br>
+        <div id="conversionOptions">
+            <!-- Options for Length Conversions -->
+            <div id="lengthOptions" class="options">
+                <select id="lengthFrom">
+                    <option value="-1"><b>From</b></option>
+                    <option value="meter">Meter (m)</option>
+                    <option value="feet">Feet (ft)</option>
+                    <option value="mile">Mile (M)</option>
+                    <option value="km">Kilometer (KM)</option>
+                    <option value="centimeter">Centimeter (cm)</option>
+                    <option value="millimeter">Millimeter (mm)</option>
+                    <option value="yard">Yard (yd)</option>
+                    <option value="inch">Inch</option>
+                </select>
+
+                <select id="lengthTo">
+                    <option value="-1"><b>To</b></option>
+                    <option value="meter">Meter (m)</option>
+                    <option value="feet">Feet (ft)</option>
+                    <option value="mile">Mile (M)</option>
+                    <option value="km">Kilometer (KM)</option>
+                    <option value="centimeter">Centimeter (cm)</option>
+                    <option value="millimeter">Millimeter (mm)</option>
+                    <option value="yard">Yard (yd)</option>
+                    <option value="inch">Inch</option>
+                </select>
+            </div>
+
+            <!-- Options for Mass Conversions -->
+            <div id="massOptions" class="options" style="display:none;">
+                <select id="massFrom">
+                    <option value="-1"><b>From</b></option>
+                    <option value="kg">Kilogram (Kg)</option>
+                    <option value="pound">Pound (lb)</option>
+                    <option value="tonne">Tonne (T)</option>
+                    <option value="gram">Gram (g)</option>
+                    <option value="ounce">Ounce (Oz.)</option>
+                </select>
+
+                <select id="massTo">
+                    <option value="-1"><b>To</b></option>
+                    <option value="kg">Kilogram (Kg)</option>
+                    <option value="pound">Pound (lb)</option>
+                    <option value="tonne">Tonne (T)</option>
+                    <option value="gram">Gram (g)</option>
+                    <option value="ounce">Ounce (Oz.)</option>
+                </select>
+            </div>
+
+            <!-- Options for Volume Conversions -->
+            <div id="volumeOptions" class="options" style="display:none;">
+                <select id="volumeFrom">
+                    <option value="-1"><b>From</b></option>
+                    <option value="litre">Litre (L)</option>
+                    <option value="milliliter">Milliliter (ml)</option>
+                    <option value="oz">Fluid ounces (fl oz.)</option>
+                </select>
+
+                <select id="volumeTo">
+                    <option value="-1"><b>To</b></option>
+                    <option value="litre">Litre (L)</option>
+                    <option value="milliliter">Milliliter (ml)</option>
+                    <option value="oz">Fluid ounces (fl oz.)</option>
+                </select>
+            </div>
+
+            <!-- Options for Temperature Conversions -->
+            <div id="temperatureOptions" class="options" style="display:none;">
+                <select id="temperatureFrom">
+                    <option value="-1"><b>From</b></option>
+                    <option value="celsius">Celsius (°C)</option>
+                    <option value="fahrenheit">Fahrenheit (°F)</option>
+                    <option value="kelvin">Kelvin (K)</option>
+                </select>
+
+                <select id="temperatureTo">
+                    <option value="-1"><b>To</b></option>
+                    <option value="celsius">Celsius (°C)</option>
+                    <option value="fahrenheit">Fahrenheit (°F)</option>
+                    <option value="kelvin">Kelvin (K)</option>
+                </select>
+            </div>
+        </div>
+        <br>
+        <input type="number" id="inputValue" placeholder="Enter value to convert">
+        <br><br>
+        <button onclick="convert()">Convert</button>
+        <br>
+        <div id="result"></div>
+        <input type="text" id="ooo" placeholder="Answer">
+    </div>
+    <script src="indexscript.js"></script>
+</body>
+</html>

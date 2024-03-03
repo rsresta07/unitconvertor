@@ -1,0 +1,56 @@
+/* General styling for the entire body */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Center align the main heading */
+h1 {
+    text-align: center;
+}
+
+/* Styling for the converter container */
+.converter {
+    margin: 20px auto; /* Center the container horizontally */
+    width: 400px;
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Space out elements within option sections */
+.options {
+    margin-bottom: 10px;
+}
+
+/* Style labels, select elements, and buttons */
+label, select, button {
+    display: block; /* Place each element on a new line */
+    margin-bottom: 5px;
+}
+
+/* Style select elements */
+select {
+    width: 100%; /* Take up full width of the container */
+    padding: 5px;
+}
+
+/* Style input elements */
+input {
+    width: 96%; /* Take up most of the container width */
+    padding: 5px;
+}
+
+/* Style the convert button */
+button {
+    background-color: #4CAF50;
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Change button color on hover for visual feedback */
+button:hover {
+    background-color: #45a049;
+}
